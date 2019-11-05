@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Caculator</h1>
+    Enter a
+    <input type="text" name="a" id="a"> <br>
+    Enter b
+    <input type="text" name="b" id="b"> <br>
+    <button type="submit" onclick="Caculator1()" value="Addition" id="Addition"> Addition +</button>
+    <button type="submit" onclick="Caculator2()" value="Subtraction" id="Subtraction"> Subtraction -</button>
+    <button type="submit" onclick="Caculator3()" value="Multiplication" id="Multiplication"> Multiplication *</button>
+    <button type="submit" onclick="Caculator4()" value="Divition" id="Divition"> Divition / </button>
+    <p id="C"></p>
+    <script>
+        let result = document.getElementById("C");
+        function Caculator1() {
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            let z = a + b;
+            result.innerHTML = ('Result Addition : ' + z);
+        }
+        function Caculator2() {
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            let z = a - b;
+            result.innerHTML = ('Result Subtraction : ' + z);
+        }
+        function Caculator3() {
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            let z = a * b;
+            result.innerHTML = ('Result Multiplication : ' + z);
+        }
+        function Caculator4() {
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            let z = a / b;
+            result.innerHTML = ('Result Divition : ' + z);
+        }
+    </script>
+</body>
+
+</html>

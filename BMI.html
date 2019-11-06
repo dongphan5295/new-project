@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let weight = parseFloat(prompt('Enter your weight (kg)'));
+        let tall = parseFloat(prompt('Enter your tall (m)'));
+        let BMI = (weight) / (tall * tall);
+        if (BMI < 18.5) {
+            alert("You're Underweight");
+        }
+        else if (BMI < 25) {
+            alert("You're Normal");
+        }
+        else if (BMI < 30) {
+            alert("You're Overweight");
+        } else {
+            alert("You're Obese")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        Hợp đồng lao động từ 3 tháng trở lên
+        >5 triệu -> Thu nhập tính thuế (TNTT) x 5%
+        5-10 triệu -> Thu nhập tính thuế (TNTT) x 10%
+        10-18 triệu -> Thu nhập tính thuế (TNTT) x 15%
+        18-32 triệu -> Thu nhập tính thuế (TNTT) x 20%
+        32-52 triệu -> Thu nhập tính thuế (TNTT) x 25%
+        52-80 triệu -> Thu nhập tính thuế (TNTT) x 30%
+        >80 triệu-> Thu nhập tính thuế (TNTT) x 35%
+    -->
+    <!--Lưu ý : Thu nhập tính thuế(TNTT) đã bao gồm trừ các khoản miễn thuế +các khoản giảm trừ và các khoản không chịu thuê-->
+    <script>
+        let TNTT = +prompt('Nhập thu nhập tính thuế trong một tháng vào :');
+        if (TNTT > 80) {
+            let thuephainop80 = TNTT * 0.35;
+            alert('Thuế phải nộp là : ' + thuephainop80 + 'VND');
+        }
+        else if (TNTT > 52) {
+            let thuephainop52 = TNTT * 0.3;
+            alert('Thuế phải nộp là : ' + thuephainop52 +'VND');
+        }
+        else if (TNTT > 32) {
+            let thuephainop32 = TNTT * 0.25;
+            alert('Thuế phải nộp là : ' + thuephainop32 +'VND');
+        }
+        else if (TNTT > 18) {
+            let thuephainop18 = TNTT * 0.2;
+            alert('Thuế phải nộp là : ' + thuephainop18 +'VND');
+        }
+        else if (TNTT > 10) {
+            let thuephainop10 = TNTT * 0.15;
+            alert('Thuế phải nộp là : ' + thuephainop10 +'VND');
+        }
+        else if (TNTT >= 5) {
+            let thuephainop5 = TNTT * 0.1;
+            alert('Thuế phải nộp là : ' + thuephainop5 +'VND');
+        } else {
+            alert('Không cần nộp thuế');
+        }
+    </script>
+</body>
+
+</html>

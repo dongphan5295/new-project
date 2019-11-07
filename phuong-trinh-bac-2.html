@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt('Nhap vao bien a :');
+        let b = +prompt('Nhap vao bien b :');
+        let c = +prompt('Nhap vao bien c :');
+        let delta = (b * b) - (4 * a * c);
+        if (delta > 0) {
+            let x1 = ((-b + Math.sqrt(delta )) / (2 * a));
+            let x2 = ((-b - Math.sqrt(delta )) / (2 * a));
+            alert('Phuong trinh co 2 nghiem : ' + x1 +' và ' + x2);
+        }
+        else if (delta < 0) {
+            alert('Phuong trinh vo nghiem');
+        } else {
+            let x = -b / (2 * a);
+            alert('Phuong trinh co nghiem kep x= ' + x);
+        }
+
+    </script>
+</body>
+
+</html>

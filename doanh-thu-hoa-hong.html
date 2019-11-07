@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let doanhthu = parseFloat(prompt('Nhap vao doanh thu thang'));
+        if (doanhthu >= 30000) {
+            let hoahong1 = (20*doanhthu)/100;
+            alert('Hoa hong nhan duoc la :' + hoahong1)
+        }
+        else if (doanhthu >= 10000) {
+            let hoahong2 = (15*doanhthu)/100;
+            alert('Hoa hong nhan duoc la :' + hoahong2)
+        }
+        else if (doanhthu >=4000) {
+            let hoahong3 = (10*doanhthu)/100
+            alert('Hoa hong nhan duoc la :' + hoahong3)
+        } else {
+            alert('Khong nhan duoc hoa hong')
+        }
+    </script>
+</body>
+
+</html>

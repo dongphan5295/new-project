@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ktra = parseFloat(prompt('Nhap diem kiem tra'));
+        let giuaki = parseFloat(prompt('Nhap diem giua ki'));
+        let cuoiki = parseFloat(prompt('Nhap diem cuoi ki'));
+        let diemtb = (ktra + giuaki + cuoiki * 2) / 4;
+        if ((diemtb < 0) || (diemtb > 10)) {
+            alert('Nhap sai')
+        }
+        else if (diemtb >= 8) {
+            alert('Xep loai gioi'+ diemtb)
+        }
+        else if (diemtb >= 6) {
+            alert('Xep loai kha' + diemtb)
+        }
+        else if (diemtb >= 4) {
+            alert('Xep loai trung binh' +diemtb)
+        } else {
+            alert('Xep loai yeu' + diemtb)
+        }
+    </script>
+</body>
+
+</html>

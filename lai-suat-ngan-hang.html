@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Giả sử lãi suất vay ngân hàng một năm là ls=12%
+    Và thời hạn vay là 3 tháng-->
+    <script>
+        let sotienvay=+prompt('Nhập vào số tiền vay :');
+        const ls=0.12
+        let laisuatthang1=(sotienvay*ls)/12
+        let laisuatthang2=((laisuatthang1+sotienvay)*ls)/12
+        let laisuatthang3=((laisuatthang2+sotienvay)*ls)/12
+        let laisuattong=laisuatthang1+laisuatthang2+laisuatthang3
+        alert('Lãi suất tổng bao gồm cả lãi con là : '+ laisuattong + 'VND');
+
+    </script>
+</body>
+</html>
